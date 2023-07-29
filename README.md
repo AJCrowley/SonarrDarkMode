@@ -2,7 +2,7 @@
 
 CSS &copy; 2023 [Kris McCann](https://github.com/AJCrowley) - [krismccann@gmail.com](mailto:krismccann@gmail.com)
 
-Some simple CSS enhancements for Sonarr to give it a night mode and add a layer of polish/
+Some simple CSS enhancements for Sonarr to give it a night mode and add a layer of polish.
 
 To use, just install a UserCSS browser extension, I use [Style for Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), as it allows you to define different CSS adaptions by URL, so these mods won't be applied to all servers on your localhost. To limit the mods to Sonarr (or whatever you have running on port 8989), just uncomment the first line (and matching bracket on the last line), and modify the port to match your Sonarr listening port.
 ```css
