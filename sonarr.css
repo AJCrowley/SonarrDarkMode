@@ -1,5 +1,5 @@
 /*@-moz-document url-prefix("http://localhost:8989/") {*/
-body {
+    body {
         color: #ccc;
     }
 
@@ -89,7 +89,7 @@ body {
     }
 
     div.PageContentBody-contentBody-1kgeZ {
-        background-color: #333;
+        background-color: #262833;
     }
 
     button.Button-button-1tAe5,
