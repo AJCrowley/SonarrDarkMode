@@ -230,7 +230,8 @@
         margin-top: 9px !important;
     }
 
-    .PageJumpBarItem-jumpBarItem-3V98O {
+    button.PageJumpBarItem-jumpBarItem-3V98O {
+        border-radius: 0;
         border-bottom: 1px solid #666;
     }
 /*}*/
