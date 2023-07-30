@@ -1,10 +1,11 @@
 /*@-moz-document url-prefix("http://localhost:8989/") {*/
-    body {
+body {
         color: #ccc;
     }
 
     button {
         line-height: 1;
+        border-radius: 8px;
     }
 
     div.PageContentBody-innerContentBody-V-w79 > div,
@@ -14,7 +15,6 @@
     div.CalendarEvent-seriesTitle-3nGRY,
     div.ModalFooter-modalFooter-3jawm {
         color: #999;
-        /*font-size: 12px;*/
     }
     
     div.SeriesIndexPoster-content-2VTBS > div:last-child {
@@ -93,6 +93,7 @@
     }
 
     button.Button-button-1tAe5,
+    div.AddNewSeries-searchIconContainer-2rJMO,
     div.DaysOfWeek-daysOfWeek-16hC5 > * {
         background-color: #666;
     }
@@ -155,6 +156,16 @@
         background: linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, #fff 13px, #fff calc(100% - 13px), rgba(255, 255, 255, 0) 100%);
         border-color: #333;
     }
+    
+    div.PageSidebarItem-isActiveItem-2jsqy {
+        background: linear-gradient(90deg, rgb(0, 101, 170) 0, rgb(42, 47, 65) 10%);
+        border: 3px solid rgb(0, 101, 170);
+    }
+    
+    div.PageSidebarItem-isActiveItem-2jsqy a,
+    div.PageSidebarItem-item-3Nkst > div {
+        background-color: transparent;
+    }
 
     div.SeriesIndexPoster-nextAiring-2nqSB {
         background-color: #262833;
@@ -172,6 +183,10 @@
     button.PageToolbarButton-toolbarButton-84KD7,
     button.ToolbarMenuButton-menuButton-3ytbC {
         padding: 0;
+    }
+    
+    a.PageSidebarItem-link-vbRsb {
+        padding: 15px 24px;
     }
 
     button.ToolbarMenuButton-menuButton-3ytbC > div {
