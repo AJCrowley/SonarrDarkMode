@@ -1,11 +1,40 @@
+/* ==UserStyle==
+@name           Sonarr Dark Mode
+@namespace      https://github.com/AJCrowley/SonarrDarkMode
+@version        1.0.0
+@description    Dark mode for Sonarr
+@author         Kris McCann
+==/UserStyle== */
 /*@-moz-document url-prefix("http://localhost:8989/") {*/
+:root {
+        --border-radius: 8px;
+        --grey-1: #262833;
+        --grey-2: #2a2f41;
+        --grey-3: #333;
+        --blue-1: #06a;
+        --white-1: #666;
+        --white-2: #999;
+        --white-3: #ccc;
+        --white-4: #fff;
+        --sidebar-blue: rgb(0, 101, 170);
+        --sidebar-grey: rgb(42, 47, 65);
+        --icon-green: #27c24c;
+        --icon-red: #f05050;
+        --icon-blue: #5d9cec;
+        --icon-purple: #7a43b6;
+        --icon-orange: #ffa500;
+        --icon-grey: #adadad;
+        --icon-white: rgba(255, 255, 255, 0);
+        --shadow-black: rgba(0, 0, 0, 0.25);
+    }
+    
     body {
-        color: #ccc;
+        color: var(--white-3);
     }
 
     button {
         line-height: 1;
-        border-radius: 8px;
+        border-radius: var(--border-radius);
     }
 
     div.PageContentBody-innerContentBody-V-w79 > div,
@@ -14,67 +43,74 @@
     div.PageHeader-header-JYJAc,
     div.CalendarEvent-seriesTitle-3nGRY,
     div.ModalFooter-modalFooter-3jawm {
-        color: #999;
+        color: var(--white-2);
     }
-    
+
     div.SeriesIndexPoster-content-2VTBS > div:last-child,
     div.CalendarDays-days-3nB04 {
-        border-radius: 0 0 8px 8px;
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
     }
-    
+
     a.SeriesIndexPoster-link-2Rucc > img {
-        border-radius: 8px 8px 0 0;
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
     }
-    
+
     div.SeriesIndexPoster-ended-3J4F_,
     div.DaysOfWeek-daysOfWeek-16hC5 > div:last-child {
-        border-radius: 0 8px 0 0;
+        border-radius: 0 var(--border-radius) 0 0;
     }
-    
+
     div.DaysOfWeek-daysOfWeek-16hC5 > div:first-child {
-        border-radius: 8px 0 0 0;
+        border-radius: var(--border-radius) 0 0 0;
     }
-    
+
     div.CalendarDays-days-3nB04 > div:first-child {
-        border-radius: 0 0 0 8px;
+        border-radius: 0 0 0 var(--border-radius);
     }
-    
+
     div.CalendarDays-days-3nB04 > div:last-child {
-        border-radius: 0 0 8px 0;
+        border-radius: 0 0 var(--border-radius) 0;
     }
-    
+
     div.ModalContent-modalContent-f33n- {
-        background-color: #333;
-        border-radius: 8px;
-        color: #ddd;
+        background-color: var(--grey-3);
+        border-radius: var(--border-radius)px;
+        color: var(--white-3);
     }
 
     div.CalendarHeader-header-cCEaM,
     li.EpisodeDetailsModalContent-tab-UBMUf,
+    div.Modal-modal-VB7eH span:not(.Label-medium-HaWuq > span):not(.Label-inverse-27aOi):not(.Label-medium-HaWuq),
+    div.Modal-modal-VB7eH div:not(.Label-info-3wLFA),
+    span.Label-label-35sr8,
     fieldset.FieldSet-fieldSet-37M-a > legend,
     button.Button-button-1tAe5,
     div.DaysOfWeek-daysOfWeek-16hC5,
     svg.fa-search,
     svg.fa-user {
-        color: #ddd;
+        color: var(--white-3);
     }
 
     div.CalendarEvent-episodeInfo-azFKq,
     div.CalendarEvent-airTime-3YsgC,
     li.EpisodeDetailsModalContent-tab-UBMUf:not(.EpisodeDetailsModalContent-selectedTab-_FbVg),
     div.ModalBody-innerModalBody-3gO-u {
-        color: #999;
+        color: var(--white-2);
+    }
+
+    span.Label-label-35sr8 {
+        color: var(--grey-1) !important;
     }
 
     div.PageHeader-header-JYJAc {
-        background-color: #06a;
+        background-color: var(--blue-1);
     }
 
     div.SeriesIndexPoster-title-1h3SR,
     div.PageSidebar-sidebar-20RVF,
     div.PageContentBody-contentBody-1kgeZ,
     div.SeriesIndexPoster-nextAiring-2nqSB {
-        background-color: #262833;
+        background-color: var(--grey-1);
     }
 
     div.SeriesDetailsSeason-season-rsdqF,
@@ -83,13 +119,13 @@
     div.PageJumpBar-jumpBarItems-2NMFr,
     div.PageSidebarItem-item-3Nkst,
     div.PageSidebar-sidebar-20RVF {
-        background-color: #2a2f41;
+        background-color: var(--grey-2);
     }
 
     button.Button-button-1tAe5,
     div.AddNewSeries-searchIconContainer-2rJMO,
     div.DaysOfWeek-daysOfWeek-16hC5 > * {
-        background-color: #666;
+        background-color: var(--white-1);
     }
 
     div.PageContentBody-contentBody-1kgeZ,
@@ -98,7 +134,13 @@
     div.CalendarDay-day-1-M7C,
     div.CalendarDays-week-2W1b2,
     button.Button-button-1tAe5 {
-        border-color: #666;
+        border-color: var(--white-1);
+    }
+
+    .Legend-legend-2W1zn > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     div.CalendarEvent-downloaded-1ZMYd,
@@ -109,60 +151,66 @@
     div.CalendarEvent-onAir-1YTlC,
     div.LegendIconItem-legendIconItem-QvfzD {
         border: 2px solid;
-        border-radius: 8px;
-        box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.25);
+        border-radius: var(--border-radius);
+        box-shadow: 3px 3px 10px 3px var(--shadow-black);
         font-size: 10px;
-        margin: 12px 6px !important;
+        margin: 6px !important;
         padding: 2px 14px;
     }
 
+    div.Legend-legend-2W1zn > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
     div.CalendarEvent-downloaded-1ZMYd {
-        background: linear-gradient(90deg, #27c24c 1px, #fff 13px, #fff calc(100% - 13px), #27c24c 100%);
-        border-color: #27c24c;
+        background: linear-gradient(90deg, var(--icon-green) 1px, var(--white-4) 13px, var(--white-4) calc(100% - 13px), var(--icon-green) 100%);
+        border-color: var(--icon-green);
     }
 
     div.CalendarEvent-missing-2Uj6M {
-        background: linear-gradient(90deg, #f05050 1px, #fff 13px, #fff calc(100% - 13px), #f05050 100%);
-        border-color: #f05050;
+        background: linear-gradient(90deg, var(--icon-red) 1px, var(--white-4) 13px, var(--white-4) calc(100% - 13px), var(--icon-red) 100%);
+        border-color: var(--icon-red);
     }
 
     div.CalendarEvent-unaired-3wyjs {
-        background: linear-gradient(90deg, #5d9cec 1px, #fff 13px, #fff calc(100% - 13px), #5d9cec 100%);
-        border-color: #5d9cec;
+        background: linear-gradient(90deg, var(--icon-blue) 1px, var(--white-4) 13px, var(--white-4) calc(100% - 13px), var(--icon-blue) 100%);
+        border-color: var(--icon-blue);
     }
 
     div.CalendarEvent-downloading-2dk-4 {
-        background: linear-gradient(90deg, #7a43b6 1px, #fff 13px, #fff calc(100% - 13px), #7a43b6 100%);
-        border-color: #7a43b6;
+        background: linear-gradient(90deg, var(--icon-purple) 1px, var(--white-4) 13px, var(--white-4) calc(100% - 13px), var(--icon-purple) 100%);
+        border-color: var(--icon-purple);
     }
 
     div.CalendarEvent-unmonitored-7tD28 {
-        background: linear-gradient(90deg, #adadad 1px, #fff 13px, #fff calc(100% - 13px), #adadad 100%);
-        border-color: #adadad;
+        background: linear-gradient(90deg, var(--icon-grey) 1px, var(--white-4) 13px, var(--white-4) calc(100% - 13px), var(--icon-grey) 100%);
+        border-color: var(--icon-grey);
     }
 
     div.CalendarEvent-onAir-1YTlC {
-        background: linear-gradient(90deg, #ffa500 1px, #fff 13px, #fff calc(100% - 13px), #ffa500 100%);
-        border-color: #ffa500;
+        background: linear-gradient(90deg, var(--icon-orange) 1px, var(--white-4) 13px, var(--white-4) calc(100% - 13px), var(--icon-orange)100%);
+        border-color: var(--icon-orange);
     }
 
     div.LegendIconItem-legendIconItem-QvfzD {
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, #fff 13px, #fff calc(100% - 13px), rgba(255, 255, 255, 0) 100%);
-        border-color: #333;
+        background: linear-gradient(90deg, var(--icon-white) 1px, var(--white-4) 13px, var(--white-4) calc(100% - 13px), var(--icon-white) 100%);
+        border-color: var(--grey-3);
     }
-    
+
     div.PageSidebarItem-isActiveItem-2jsqy {
-        background: linear-gradient(90deg, rgb(0, 101, 170) 0, rgb(42, 47, 65) 10%);
-        border: 3px solid rgb(0, 101, 170);
+        background: linear-gradient(90deg, var(--sidebar-blue) 0, var(--sidebar-grey) 10%);
+        border: 3px solid var(--sidebar-blue);
     }
-    
+
     div.PageSidebarItem-isActiveItem-2jsqy a,
     div.PageSidebarItem-item-3Nkst > div {
         background-color: transparent;
     }
 
     div.SeriesIndexPoster-nextAiring-2nqSB {
-        color: #fff;
+        color: var(--white-4);
     }
 
     div.PageToolbar-toolbar-WwUGV,
@@ -177,7 +225,7 @@
     button.ToolbarMenuButton-menuButton-3ytbC {
         padding: 0;
     }
-    
+
     a.PageSidebarItem-link-vbRsb {
         padding: 15px 24px;
     }
@@ -234,6 +282,6 @@
 
     button.PageJumpBarItem-jumpBarItem-3V98O {
         border-radius: 0;
-        border-bottom: 1px solid #666;
+        border-bottom: 1px solid var(--white-1);
     }
 /*}*/
