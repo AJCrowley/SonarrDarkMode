@@ -7,7 +7,7 @@
 ==/UserStyle== */
 /*@-moz-document url-prefix("http://localhost:8989/") {*/
     :root {
-        --border-radius: 8px;
+        --border-radius: 9px;
         --grey-1: #262833;
         --grey-2: #2a2f41;
         --grey-3: #333;
@@ -113,6 +113,10 @@
         background-color: transparent;
     }
 
+    div.Modal-modal-VB7eH {
+        border-radius: var(--border-radius);
+    }
+
     div.SeriesIndexPoster-content-2VTBS > div:last-child,
     div.CalendarDays-days-3nB04 {
         border-radius: 0 0 var(--border-radius) var(--border-radius);
@@ -141,7 +145,7 @@
 
     div.ModalContent-modalContent-f33n- {
         background-color: var(--grey-3);
-        border-radius: var(--border-radius)px;
+        border-radius: var(--border-radius);
         color: var(--white-3);
     }
 
