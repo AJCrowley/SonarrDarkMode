@@ -37,13 +37,80 @@
         border-radius: var(--border-radius);
     }
 
+    div.CalendarEvent-seriesTitle-3nGRY,
+    div.CalendarEvent-episodeTitle-oTztw,
+    div.SeriesIndexPosterInfo-info-3ahzo {
+        color: var(--white-1);
+    }
+
     div.PageContentBody-innerContentBody-V-w79 > div,
     div.PageContentBody-innerContentBody-V-w79 > a,
     div.ModalHeader-modalHeader-1uGvm,
     div.PageHeader-header-JYJAc,
-    div.CalendarEvent-seriesTitle-3nGRY,
-    div.ModalFooter-modalFooter-3jawm {
+    span.SeriesDetails-detailsLabel-3UqC7,
+    div.ModalFooter-modalFooter-3jawm,
+    div.CalendarEvent-episodeInfo-azFKq,
+    div.CalendarEvent-airTime-3YsgC,
+    div.PageContentFooter-contentFooter-33N04,
+    li.EpisodeDetailsModalContent-tab-UBMUf:not(.EpisodeDetailsModalContent-selectedTab-_FbVg),
+    div.ModalBody-innerModalBody-3gO-u {
         color: var(--white-2);
+    }
+
+    div.CalendarHeader-header-cCEaM,
+    li.EpisodeDetailsModalContent-tab-UBMUf,
+    div.Modal-modal-VB7eH span:not(.Label-medium-HaWuq > span):not(.Label-inverse-27aOi):not(.Label-medium-HaWuq),
+    div.Modal-modal-VB7eH div:not(.Label-info-3wLFA),
+    span.Label-label-35sr8,
+    fieldset.FieldSet-fieldSet-37M-a > legend,
+    button.Button-button-1tAe5,
+    div.DaysOfWeek-daysOfWeek-16hC5,
+    span.Label-warning-2g1Vs,
+    svg.fa-search,
+    svg.fa-user {
+        color: var(--white-3);
+    }
+
+    div.SeriesIndexPoster-nextAiring-2nqSB,
+    span.Label-warning-2g1Vs {
+        color: var(--white-4);
+    }
+
+    span.Label-primary-PXri3,
+    span.Label-info-3wLFA,
+    tr.TableRow-row-2NoqV:hover {
+        color: var(--grey-1);
+    }
+
+    button.Button-button-1tAe5,
+    div.AddNewSeries-searchIconContainer-2rJMO,
+    div.DaysOfWeek-daysOfWeek-16hC5 > * {
+        background-color: var(--white-1);
+    }
+
+    div.SeriesIndexPoster-title-1h3SR,
+    div.PageSidebar-sidebar-20RVF,
+    div.PageContentBody-contentBody-1kgeZ,
+    div.SeriesIndexPoster-nextAiring-2nqSB {
+        background-color: var(--grey-1);
+    }
+
+    div.SeriesDetailsSeason-season-rsdqF,
+    div.SeriesDetailsSeason-collapseButtonContainer-38tta,
+    div.PageToolbar-toolbar-WwUGV,
+    div.PageJumpBar-jumpBarItems-2NMFr,
+    div.PageSidebarItem-item-3Nkst,
+    div.PageSidebar-sidebar-20RVF {
+        background-color: var(--grey-2);
+    }
+
+    div.PageHeader-header-JYJAc {
+        background-color: var(--blue-1);
+    }
+
+    div.PageSidebarItem-isActiveItem-2jsqy a,
+    div.PageSidebarItem-item-3Nkst > div {
+        background-color: transparent;
     }
 
     div.SeriesIndexPoster-content-2VTBS > div:last-child,
@@ -78,56 +145,6 @@
         color: var(--white-3);
     }
 
-    div.CalendarHeader-header-cCEaM,
-    li.EpisodeDetailsModalContent-tab-UBMUf,
-    div.Modal-modal-VB7eH span:not(.Label-medium-HaWuq > span):not(.Label-inverse-27aOi):not(.Label-medium-HaWuq),
-    div.Modal-modal-VB7eH div:not(.Label-info-3wLFA),
-    span.Label-label-35sr8,
-    fieldset.FieldSet-fieldSet-37M-a > legend,
-    button.Button-button-1tAe5,
-    div.DaysOfWeek-daysOfWeek-16hC5,
-    svg.fa-search,
-    svg.fa-user {
-        color: var(--white-3);
-    }
-
-    div.CalendarEvent-episodeInfo-azFKq,
-    div.CalendarEvent-airTime-3YsgC,
-    li.EpisodeDetailsModalContent-tab-UBMUf:not(.EpisodeDetailsModalContent-selectedTab-_FbVg),
-    div.ModalBody-innerModalBody-3gO-u {
-        color: var(--white-2);
-    }
-
-    span.Label-label-35sr8 {
-        color: var(--grey-1) !important;
-    }
-
-    div.PageHeader-header-JYJAc {
-        background-color: var(--blue-1);
-    }
-
-    div.SeriesIndexPoster-title-1h3SR,
-    div.PageSidebar-sidebar-20RVF,
-    div.PageContentBody-contentBody-1kgeZ,
-    div.SeriesIndexPoster-nextAiring-2nqSB {
-        background-color: var(--grey-1);
-    }
-
-    div.SeriesDetailsSeason-season-rsdqF,
-    div.SeriesDetailsSeason-collapseButtonContainer-38tta,
-    div.PageToolbar-toolbar-WwUGV,
-    div.PageJumpBar-jumpBarItems-2NMFr,
-    div.PageSidebarItem-item-3Nkst,
-    div.PageSidebar-sidebar-20RVF {
-        background-color: var(--grey-2);
-    }
-
-    button.Button-button-1tAe5,
-    div.AddNewSeries-searchIconContainer-2rJMO,
-    div.DaysOfWeek-daysOfWeek-16hC5 > * {
-        background-color: var(--white-1);
-    }
-
     div.PageContentBody-contentBody-1kgeZ,
     div.DaysOfWeek-daysOfWeek-16hC5 > *,
     div.CalendarDays-days-3nB04,
@@ -137,7 +154,57 @@
         border-color: var(--white-1);
     }
 
-    .Legend-legend-2W1zn > div {
+    button.PageToolbarButton-toolbarButton-84KD7,
+    button.ToolbarMenuButton-menuButton-3ytbC {
+        padding: 0;
+    }
+
+    a.PageSidebarItem-link-vbRsb {
+        padding: 15px 24px;
+    }
+
+    div.CalendarEvent-event-2LlSV {
+        margin: 0;
+    }
+
+    button.ToolbarMenuButton-menuButton-3ytbC > div {
+        margin-top: -15px;
+    }
+
+    span.ToolbarMenuButton-indicatorContainer-2pM3g {
+        margin-top: -6px;
+    }
+
+    div.LegendIconItem-legendIconItem-QvfzD {
+        margin-top: 9px !important;
+    }
+
+    div.PageToolbar-toolbar-WwUGV {
+        height: 52px !important;
+    }
+
+    div.PageToolbarButton-label--Qykn {
+        font-size: 10px;
+    }
+
+    div.PageSidebarItem-item-3Nkst > a,
+    div.PageSidebarItem-link-vbRsb > a,
+    a.PageSidebarItem-link-vbRsb {
+        width: 100%;
+    }
+
+    button.ToolbarMenuButton-menuButton-3ytbC svg button.PageToolbarButton-toolbarButton-84KD7 svg,
+    button.ToolbarMenuButton-menuButton-3ytbC svg {
+        font-size: 16px !important;
+        margin-top: 6px !important;
+    }
+
+    button.PageJumpBarItem-jumpBarItem-3V98O {
+        border-radius: 0;
+        border-bottom: 1px solid var(--white-1);
+    }
+
+    div.Legend-legend-2W1zn > div {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -156,12 +223,6 @@
         font-size: 10px;
         margin: 6px !important;
         padding: 2px 14px;
-    }
-
-    div.Legend-legend-2W1zn > div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
     }
 
     div.CalendarEvent-downloaded-1ZMYd {
@@ -204,13 +265,10 @@
         border: 3px solid var(--sidebar-blue);
     }
 
-    div.PageSidebarItem-isActiveItem-2jsqy a,
-    div.PageSidebarItem-item-3Nkst > div {
-        background-color: transparent;
-    }
-
-    div.SeriesIndexPoster-nextAiring-2nqSB {
-        color: var(--white-4);
+    div.Legend-legend-2W1zn > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     div.PageToolbar-toolbar-WwUGV,
@@ -221,41 +279,10 @@
         min-height: 46px;
     }
 
-    button.PageToolbarButton-toolbarButton-84KD7,
-    button.ToolbarMenuButton-menuButton-3ytbC {
-        padding: 0;
-    }
-
-    a.PageSidebarItem-link-vbRsb {
-        padding: 15px 24px;
-    }
-
-    button.ToolbarMenuButton-menuButton-3ytbC > div {
-        margin-top: -15px;
-    }
-
-    span.ToolbarMenuButton-indicatorContainer-2pM3g {
-        margin-top: -6px;
-    }
-
-    button.ToolbarMenuButton-menuButton-3ytbC svg button.PageToolbarButton-toolbarButton-84KD7 svg,
-    button.ToolbarMenuButton-menuButton-3ytbC svg {
-        font-size: 16px !important;
-        margin-top: 6px !important;
-    }
-
     div.PageToolbarButton-label--Qykn {
         display: flex;
         height: 30px;
         align-items: flex-end;
-    }
-
-    div.PageToolbar-toolbar-WwUGV {
-        height: 52px !important;
-    }
-
-    div.PageToolbarButton-label--Qykn {
-        font-size: 10px;
     }
 
     div.PageSidebarItem-item-3Nkst,
@@ -264,24 +291,5 @@
         display: flex;
         flex-flow: column;
         width: 100%;
-    }
-
-    div.PageSidebarItem-item-3Nkst > a,
-    div.PageSidebarItem-link-vbRsb > a,
-    a.PageSidebarItem-link-vbRsb {
-        width: 100%;
-    }
-
-    div.CalendarEvent-event-2LlSV {
-        margin: 0;
-    }
-
-    div.LegendIconItem-legendIconItem-QvfzD {
-        margin-top: 9px !important;
-    }
-
-    button.PageJumpBarItem-jumpBarItem-3V98O {
-        border-radius: 0;
-        border-bottom: 1px solid var(--white-1);
     }
 /*}*/
