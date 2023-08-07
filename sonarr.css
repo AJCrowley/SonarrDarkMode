@@ -6,7 +6,7 @@
 @author         Kris McCann
 ==/UserStyle== */
 /*@-moz-document url-prefix("http://localhost:8989/") {*/
-:root {
+    :root {
         --border-radius: 8px;
         --grey-1: #262833;
         --grey-2: #2a2f41;
@@ -27,7 +27,7 @@
         --icon-white: rgba(255, 255, 255, 0);
         --shadow-black: rgba(0, 0, 0, 0.25);
     }
-    
+
     body {
         color: var(--white-3);
     }
