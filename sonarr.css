@@ -71,6 +71,11 @@
         color: var(--white-3);
     }
 
+    div.HintedSelectInputSelectedValue-valueText-3Mn10,
+    div.QualityProfileItemGroup-name-3pPBl {
+        color: var(--grey-2) !important;
+    }
+
     div.SeriesIndexPoster-nextAiring-2nqSB,
     span.Label-danger-38_Y1,
     span.Label-warning-2g1Vs {
