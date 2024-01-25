@@ -1,23 +1,15 @@
 /* ==UserStyle==
-@name           Sonarr Dark Mode
+@name           Sonarr Dark Mode Enhancements
 @namespace      https://github.com/AJCrowley/SonarrDarkMode
-@version        1.1.0
-@description    Dark mode for Sonarr
+@version        2.0.0
+@description    Dark mode enhancements for Sonarr
 @author         Kris McCann
 ==/UserStyle== */
 /*@-moz-document url-prefix("http://localhost:8989/") {*/
     :root {
         --border-radius: 9px;
-        --grey-1: #262833;
-        --grey-2: #2a2f41;
-        --grey-3: #333;
-        --blue-1: #06a;
-        --white-1: #666;
-        --white-2: #999;
-        --white-3: #ccc;
-        --white-4: #fff;
-        --sidebar-blue: #0065AA;
-        --sidebar-grey: #2A2F41;
+        --grey-2: #181A1B;
+        --grey-1: #383A3B;
         --icon-green: #27c24c;
         --icon-red: #f05050;
         --icon-blue: #5d9cec;
@@ -25,11 +17,7 @@
         --icon-orange: #ffa500;
         --icon-grey: #adadad;
         --icon-white: rgba(255, 255, 255, 0);
-        --shadow-black: rgba(0, 0, 0, 0.25);
-    }
-
-    body {
-        color: var(--white-3);
+        --shadow-black: rgba(255, 255, 255, 0.15);
     }
 
     button {
@@ -37,269 +25,77 @@
         border-radius: var(--border-radius);
     }
 
-    div.CalendarEvent-seriesTitle-3nGRY,
-    div.CalendarEvent-episodeTitle-oTztw,
-    div.SeriesIndexPosterInfo-info-3ahzo {
-        color: var(--white-1);
+    div.DayOfWeek-dayOfWeek-D4GRS {
+        border: 1px #ccc dotted;
     }
 
-    div.PageContentBody-innerContentBody-V-w79 > div,
-    div.PageContentBody-innerContentBody-V-w79 > a,
-    div.ModalHeader-modalHeader-1uGvm,
-    div.PageHeader-header-JYJAc,
-    span.SeriesDetails-detailsLabel-3UqC7,
-    div.ModalFooter-modalFooter-3jawm,
-    div.CalendarEvent-episodeInfo-azFKq,
-    div.CalendarEvent-airTime-3YsgC,
-    div.PageContentFooter-contentFooter-33N04,
-    li.EpisodeDetailsModalContent-tab-UBMUf:not(.EpisodeDetailsModalContent-selectedTab-_FbVg),
-    div.ModalBody-innerModalBody-3gO-u {
-        color: var(--white-2);
-    }
-
-    div.CalendarHeader-header-cCEaM,
-    li.EpisodeDetailsModalContent-tab-UBMUf,
-    div.Modal-modal-VB7eH span:not(.Label-medium-HaWuq > span):not(.Label-inverse-27aOi):not(.Label-medium-HaWuq),
-    div.Modal-modal-VB7eH div:not(.Label-info-3wLFA),
-    span.Label-label-35sr8,
-    fieldset.FieldSet-fieldSet-37M-a > legend,
-    button.Button-button-1tAe5,
-    div.DaysOfWeek-daysOfWeek-16hC5,
-    span.Label-warning-2g1Vs,
-    svg.fa-search,
-    svg.fa-user {
-        color: var(--white-3);
-    }
-
-    div.HintedSelectInputSelectedValue-valueText-3Mn10,
-    div.QualityProfileItemGroup-name-3pPBl {
-        color: var(--grey-2) !important;
-    }
-
-    div.SeriesIndexPoster-nextAiring-2nqSB,
-    span.Label-danger-38_Y1,
-    span.Label-warning-2g1Vs {
-        color: var(--white-4);
-    }
-
-    span.Label-primary-PXri3,
-    span.Label-info-3wLFA,
-    tr.TableRow-row-2NoqV:hover {
-        color: var(--grey-1);
-    }
-
-    button.Button-button-1tAe5,
-    div.AddNewSeries-searchIconContainer-2rJMO,
-    div.DaysOfWeek-daysOfWeek-16hC5 > * {
-        background-color: var(--white-1);
-    }
-
-    div.SeriesIndexPoster-title-1h3SR,
-    div.PageSidebar-sidebar-20RVF,
-    div.PageContentBody-contentBody-1kgeZ,
-    div.SeriesIndexPoster-nextAiring-2nqSB {
-        background-color: var(--grey-1);
-    }
-
-    div.SeriesDetailsSeason-season-rsdqF,
-    div.SeriesDetailsSeason-collapseButtonContainer-38tta,
-    div.PageToolbar-toolbar-WwUGV,
-    div.PageJumpBar-jumpBarItems-2NMFr,
-    div.PageSidebarItem-item-3Nkst,
-    div.PageSidebar-sidebar-20RVF {
-        background-color: var(--grey-2);
-    }
-
-    div.PageHeader-header-JYJAc {
-        background-color: var(--blue-1);
-    }
-
-    div.PageSidebarItem-isActiveItem-2jsqy a,
-    div.PageSidebarItem-item-3Nkst > div {
-        background-color: transparent;
-    }
-
-    div.Modal-modal-VB7eH {
+    div.ModalContent-modalContent-bdTLe {
         border-radius: var(--border-radius);
     }
 
-    div.SeriesIndexPoster-content-2VTBS > div:last-child,
-    div.CalendarDays-days-3nB04 {
+    div.CalendarDays-days-bkUmr {
         border-radius: 0 0 var(--border-radius) var(--border-radius);
     }
 
-    a.SeriesIndexPoster-link-2Rucc > img {
-        border-radius: var(--border-radius) var(--border-radius) 0 0;
-    }
-
-    div.SeriesIndexPoster-ended-3J4F_,
-    div.DaysOfWeek-daysOfWeek-16hC5 > div:last-child {
+    div.DaysOfWeek-daysOfWeek-DQmbR > div:last-child {
         border-radius: 0 var(--border-radius) 0 0;
     }
 
-    div.DaysOfWeek-daysOfWeek-16hC5 > div:first-child {
+    div.DaysOfWeek-daysOfWeek-DQmbR > div:first-child {
         border-radius: var(--border-radius) 0 0 0;
     }
 
-    div.CalendarDays-days-3nB04 > div:first-child {
+    div.CalendarDays-days-bkUmr > div:first-child {
         border-radius: 0 0 0 var(--border-radius);
     }
 
-    div.CalendarDays-days-3nB04 > div:last-child {
+    div.CalendarDays-days-bkUmr > div:last-child {
         border-radius: 0 0 var(--border-radius) 0;
     }
 
-    div.ModalContent-modalContent-f33n- {
-        background-color: var(--grey-3);
-        border-radius: var(--border-radius);
-        color: var(--white-3);
-    }
-
-    div.PageContentBody-contentBody-1kgeZ,
-    div.DaysOfWeek-daysOfWeek-16hC5 > *,
-    div.CalendarDays-days-3nB04,
-    div.CalendarDay-day-1-M7C,
-    div.CalendarDays-week-2W1b2,
-    button.Button-button-1tAe5 {
-        border-color: var(--white-1);
-    }
-
-    button.PageToolbarButton-toolbarButton-84KD7,
-    button.ToolbarMenuButton-menuButton-3ytbC {
-        padding: 0;
-    }
-
-    a.PageSidebarItem-link-vbRsb {
-        padding: 15px 24px;
-    }
-
-    div.CalendarEvent-event-2LlSV {
-        margin: 0;
-    }
-
-    button.ToolbarMenuButton-menuButton-3ytbC > div {
-        margin-top: -15px;
-    }
-
-    span.ToolbarMenuButton-indicatorContainer-2pM3g {
-        margin-top: -6px;
-    }
-
-    div.LegendIconItem-legendIconItem-QvfzD {
-        margin-top: 9px !important;
-    }
-
-    div.PageToolbar-toolbar-WwUGV {
-        height: 52px !important;
-    }
-
-    div.PageToolbarButton-label--Qykn {
-        font-size: 10px;
-    }
-
-    div.PageSidebarItem-item-3Nkst > a,
-    div.PageSidebarItem-link-vbRsb > a,
-    a.PageSidebarItem-link-vbRsb {
-        width: 100%;
-    }
-
-    button.ToolbarMenuButton-menuButton-3ytbC svg button.PageToolbarButton-toolbarButton-84KD7 svg,
-    button.ToolbarMenuButton-menuButton-3ytbC svg {
-        font-size: 16px !important;
-        margin-top: 6px !important;
-    }
-
-    button.PageJumpBarItem-jumpBarItem-3V98O {
-        border-radius: 0;
-        border-bottom: 1px solid var(--white-1);
-    }
-
-    div.Legend-legend-2W1zn > div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    div.CalendarEvent-downloaded-1ZMYd,
-    div.CalendarEvent-missing-2Uj6M,
-    div.CalendarEvent-unaired-3wyjs,
-    div.CalendarEvent-downloading-2dk-4,
-    div.CalendarEvent-unmonitored-7tD28,
-    div.CalendarEvent-onAir-1YTlC,
-    div.LegendIconItem-legendIconItem-QvfzD {
+    div.LegendItem-legendItem-MGaWB,
+    div.LegendIconItem-legendIconItem-HRUQm,
+    div.CalendarEvent-event-P9Zg6 {
         border: 2px solid;
         border-radius: var(--border-radius);
-        box-shadow: 3px 3px 10px 3px var(--shadow-black);
+        box-shadow: 1px 1px 3px 1px var(--shadow-black);
         font-size: 10px;
         margin: 6px !important;
         padding: 2px 14px;
     }
 
-    div.CalendarEvent-downloaded-1ZMYd {
-        background: linear-gradient(90deg, var(--icon-green) 1px, var(--white-4) 13px, var(--white-4) calc(100% - 13px), var(--icon-green) 100%);
+    div.CalendarEvent-downloaded-aVyLe {
+        background: linear-gradient(90deg, var(--icon-green) 1px, var(--grey-1) 13px, var(--grey-1) calc(100% - 13px), var(--icon-green) 100%);
         border-color: var(--icon-green);
     }
 
-    div.CalendarEvent-missing-2Uj6M {
-        background: linear-gradient(90deg, var(--icon-red) 1px, var(--white-4) 13px, var(--white-4) calc(100% - 13px), var(--icon-red) 100%);
+    div.CalendarEvent-missing-Lfb1c {
+        background: linear-gradient(90deg, var(--icon-red) 1px, var(--grey-1) 13px, var(--grey-1) calc(100% - 13px), var(--icon-red) 100%);
         border-color: var(--icon-red);
     }
 
-    div.CalendarEvent-unaired-3wyjs {
-        background: linear-gradient(90deg, var(--icon-blue) 1px, var(--white-4) 13px, var(--white-4) calc(100% - 13px), var(--icon-blue) 100%);
+    div.CalendarEvent-unaired-qLVRa {
+        background: linear-gradient(90deg, var(--icon-blue) 1px, var(--grey-1) 13px, var(--grey-1) calc(100% - 13px), var(--icon-blue) 100%);
         border-color: var(--icon-blue);
     }
 
-    div.CalendarEvent-downloading-2dk-4 {
-        background: linear-gradient(90deg, var(--icon-purple) 1px, var(--white-4) 13px, var(--white-4) calc(100% - 13px), var(--icon-purple) 100%);
+    div.CalendarEvent-downloading-chGem {
+        background: linear-gradient(90deg, var(--icon-purple) 1px, var(--grey-1) 13px, var(--grey-1) calc(100% - 13px), var(--icon-purple) 100%);
         border-color: var(--icon-purple);
     }
 
-    div.CalendarEvent-unmonitored-7tD28 {
-        background: linear-gradient(90deg, var(--icon-grey) 1px, var(--white-4) 13px, var(--white-4) calc(100% - 13px), var(--icon-grey) 100%);
+    div.CalendarEvent-unmonitored-vL9TJ {
+        background: linear-gradient(90deg, var(--icon-grey) 1px, var(--grey-1) 13px, var(--grey-1) calc(100% - 13px), var(--icon-grey) 100%);
         border-color: var(--icon-grey);
     }
 
-    div.CalendarEvent-onAir-1YTlC {
-        background: linear-gradient(90deg, var(--icon-orange) 1px, var(--white-4) 13px, var(--white-4) calc(100% - 13px), var(--icon-orange)100%);
+    div.CalendarEvent-onAir-L0ij_ {
+        background: linear-gradient(90deg, var(--icon-orange) 1px, var(--grey-1) 13px, var(--grey-1) calc(100% - 13px), var(--icon-orange)100%);
         border-color: var(--icon-orange);
     }
 
-    div.LegendIconItem-legendIconItem-QvfzD {
-        background: linear-gradient(90deg, var(--icon-white) 1px, var(--white-4) 13px, var(--white-4) calc(100% - 13px), var(--icon-white) 100%);
-        border-color: var(--grey-3);
-    }
-
-    div.PageSidebarItem-isActiveItem-2jsqy {
-        background: linear-gradient(90deg, var(--sidebar-blue) 0, var(--sidebar-grey) 10%);
-        border: 3px solid var(--sidebar-blue);
-    }
-
-    div.Legend-legend-2W1zn > div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    div.PageToolbar-toolbar-WwUGV,
-    div.PageJumpBar-jumpBarItems-2NMFr,
-    div.PageSidebarItem-item-3Nkst {
-        box-sizing: border-box;
-        padding-top: 0;
-        min-height: 46px;
-    }
-
-    div.PageToolbarButton-label--Qykn {
-        display: flex;
-        height: 30px;
-        align-items: flex-end;
-    }
-
-    div.PageSidebarItem-item-3Nkst,
-    div.PageSidebarItem-link-vbRsb {
-        align-items: center;
-        display: flex;
-        flex-flow: column;
-        width: 100%;
+    div.LegendIconItem-legendIconItem-HRUQm {
+        background: linear-gradient(90deg, var(--icon-white) 1px, var(--grey-1) 13px, var(--grey-1) calc(100% - 13px), var(--icon-white) 100%);
+        border-color: var(--grey-2);
     }
 /*}*/
