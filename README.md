@@ -1,5 +1,7 @@
 # Sonarr - Dark Mode Enhancements UserCSS Script
 
+## Note: white Sonarr 4 is in beta, I have to make changes each time they release an update. For this reason, I'm pausing any further work on this until 4 is stable. If you're still running v3, you can still check out the older commits that cover v3 to add the dark mode. Since 4 comes with dark mode as standard, I'll see how it turns out before making any changes. Thanks!
+
 CSS &copy; 2023 [Kris McCann](https://github.com/AJCrowley) - [krismccann@gmail.com](mailto:krismccann@gmail.com)
 
 Since Sonarr 4 Beta comes with dark mode installed by default, this UserCSS script has been vastly simplified. It now uses the default colour palette for the most part, while still having the rounded edges and gradient colour coding of the previous version of the theme.
